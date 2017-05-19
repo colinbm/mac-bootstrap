@@ -5,7 +5,7 @@ read -p "Hit enter once command line tools are installed.";
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 brew doctor;
-read -p "Hit enter to confirm 'brew doctor' output and continue. "
+read -p "Hit enter to confirm 'brew doctor' output and continue. ";
 
 brew install zsh zsh-completions;
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto";
@@ -13,11 +13,11 @@ echo "fpath=(/usr/local/share/zsh-completions $fpath)" >> $HOME/.zshrc;
 setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
+done;
 
-cp files/.zpreztorc ~/.zprezto/runcoms/zpreztorc
+cp files/.zpreztorc ~/.zprezto/runcoms/zpreztorc;
 
-sudo bash -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
+sudo bash -c 'echo "/usr/local/bin/zsh" >> /etc/shells';
 chsh -s /usr/local/bin/zsh;
 
 brew install watch;
@@ -93,9 +93,9 @@ bash --login -c 'gem install bundler';
 
 
 bash --login -c 'gem install rubocop';
-curl -o "$HOME/Library/Application Support/Sublime Text 3/Package%20Control.sublime-package" https://packagecontrol.io/Package%20Control.sublime-package
-cp "files/Package Control.sublime-settings" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings"
+curl -o "$HOME/Library/Application Support/Sublime Text 3/Package%20Control.sublime-package" https://packagecontrol.io/Package%20Control.sublime-package;
+cp "files/Package Control.sublime-settings" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings";
 
 ln -s $HOME/Dropbox/bin $HOME/bin;
-echo 'export PATH="$HOME/bin:$PATH"' >> $HOME/.bashrc
+echo 'export PATH="$HOME/bin:$PATH"' >> $HOME/.bashrc;
 
