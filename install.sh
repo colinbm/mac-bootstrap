@@ -84,6 +84,7 @@ brew cask install transmission;
 brew cask install caffeine;
 brew cask install appcleaner;
 brew cask install surfeasy-vpn;
+brew cask install skyfonts;
 
 \curl -sSL https://get.rvm.io | bash -s stable --ruby;
 
