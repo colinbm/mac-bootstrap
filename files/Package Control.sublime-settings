@@ -1,0 +1,43 @@
+{
+  "additional_path_items":
+  [
+    "/usr/local/bin",
+    "/Users/colin/.rvm/gems/ruby-2.4.1/bin"
+  ],
+  "bootstrapped": true,
+  "in_process_packages":
+  [
+  ],
+  "installed_packages":
+  [
+    "AlignTab",
+    "Better CoffeeScript",
+    "Better JavaScript",
+    "Color Highlighter",
+    "CursorRuler",
+    "DashDoc",
+    "DocBlockr",
+    "EditorConfig",
+    "GitGutter",
+    "HTMLBeautify",
+    "Package Control",
+    "RuboCop",
+    "Ruby Slim",
+    "Sass",
+    "Shell Exec",
+    "SourceTree",
+    "SublimeGit",
+    "SublimeLinter",
+    "SublimeLinter-coffee",
+    "SublimeLinter-coffeelint",
+    "SublimeLinter-csslint",
+    "SublimeLinter-jshint",
+    "SublimeLinter-php",
+    "SublimeLinter-rubocop",
+    "SublimeLinter-ruby",
+    "SublimeLinter-shellcheck",
+    "SublimeLinter-slim-lint",
+    "Theme - Spacegray",
+    "URLEncode",
+  ]
+}
