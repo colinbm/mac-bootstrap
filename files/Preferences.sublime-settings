@@ -5,7 +5,6 @@
   ],
   "caret_extra_width": 1,
   "caret_style": "phase",
-  "color_scheme": "Packages/User/SublimeLinter/Twilight (SL).tmTheme",
   "default_line_ending": "LF",
   "draw_white_space": "all",
   "ensure_newline_at_eof_on_save": true,

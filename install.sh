@@ -1,24 +1,11 @@
 #/bin/bash
 
 xcode-select --install;
-read -p "Hit enter once command line tools are installed.";
+read -r -p "Hit enter once command line tools are installed. ";
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 brew doctor;
-read -p "Hit enter to confirm 'brew doctor' output and continue. ";
-
-brew install zsh zsh-completions;
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto";
-echo "fpath=(/usr/local/share/zsh-completions $fpath)" >> $HOME/.zshrc;
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done;
-
-cp files/.zpreztorc ~/.zprezto/runcoms/zpreztorc;
-
-sudo bash -c 'echo "/usr/local/bin/zsh" >> /etc/shells';
-chsh -s /usr/local/bin/zsh;
+read -r -p "Hit enter to confirm 'brew doctor' output and continue. ";
 
 brew install watch;
 brew install mysql;
@@ -32,7 +19,7 @@ npm install -g jshint;
 
 brew install mas;
 open "/Applications/App Store.app";
-read -p "Ensure you are signed in to the App Store, then hit enter. ";
+read -r -p "Ensure you are signed in to the App Store, then hit enter. ";
 mas install 1176895641; # Spark
 mas install 443987910;  # 1Password
 mas install 402383384;  # Base
@@ -50,11 +37,10 @@ mas install 421879749;  # Rested
 mas install 425424353;  # The Unarchiver
 mas install 413857545;  # Divvy
 mas install 405772121;  # LittleIpsum
-mas install 497799835;  # Xcode
 mas install 435003921;  # Fantastical
 mas install 448925439;  # Marked
 mas install 803453959;  # Slack
-mas install 417896628;  # ColorSchemer Studio
+# mas install 417896628;  # ColorSchemer Studio (not currently available?)
 mas install 969418666;  # ColorSnapper2
 
 brew cask install iterm2;
@@ -86,16 +72,20 @@ brew cask install appcleaner;
 brew cask install surfeasy-vpn;
 brew cask install skyfonts;
 
-\curl -sSL https://get.rvm.io | bash -s stable --ruby;
+curl -sSL https://get.rvm.io | bash -s stable;
 
 bash --login -c 'rvm install --default 2.4.1';
 bash --login -c 'gem install bundler';
 
 
 bash --login -c 'gem install rubocop';
-curl -o "$HOME/Library/Application Support/Sublime Text 3/Package%20Control.sublime-package" https://packagecontrol.io/Package%20Control.sublime-package;
-cp "files/Package Control.sublime-settings" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings";
+curl -o "$HOME/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package" https://packagecontrol.io/Package%20Control.sublime-package;
+open "/Applications/Sublime Text.app";
+read -r -p "I've just opened Sublime Text. Quit it before hitting enter to continue. ";
 
-ln -s $HOME/Dropbox/bin $HOME/bin;
-echo 'export PATH="$HOME/bin:$PATH"' >> $HOME/.bashrc;
+cp "files/Package Control.sublime-settings" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings";
+cp "files/Preferences.sublime-settings" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings";
+
+ln -s "$HOME/Dropbox/bin" "$HOME/bin";
+echo 'export PATH="$HOME/bin:$PATH"' >> "$HOME/.bashrc";
 
