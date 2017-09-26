@@ -77,12 +77,12 @@ curl -sSL https://get.rvm.io | bash -s stable;
 bash --login -c 'rvm install --default 2.4.1';
 bash --login -c 'gem install bundler';
 
-
 bash --login -c 'gem install rubocop';
-curl -o "$HOME/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package" https://packagecontrol.io/Package%20Control.sublime-package;
+
 open "/Applications/Sublime Text.app";
 read -r -p "I've just opened Sublime Text. Quit it before hitting enter to continue. ";
 
+curl -o "$HOME/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package" https://packagecontrol.io/Package%20Control.sublime-package;
 cp "files/Package Control.sublime-settings" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings";
 cp "files/Preferences.sublime-settings" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings";
 
