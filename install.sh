@@ -73,6 +73,7 @@ brew cask install appcleaner;
 brew cask install surfeasy-vpn;
 brew cask install skyfonts;
 open /usr/local/Caskroom/skyfonts/*/SkyFonts.app
+brew cask install undercover;
 
 curl -sSL https://get.rvm.io | bash -s stable;
 
