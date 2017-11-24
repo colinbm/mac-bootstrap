@@ -76,7 +76,7 @@ brew cask install undercover;
 
 curl -sSL https://get.rvm.io | bash -s stable;
 
-bash --login -c 'rvm install --default 2.4.1';
+bash --login -c 'rvm install --default 2.4.2';
 bash --login -c 'gem install bundler';
 
 bash --login -c 'gem install rubocop';
