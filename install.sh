@@ -43,36 +43,40 @@ mas install 803453959;  # Slack
 # mas install 417896628;  # ColorSchemer Studio (not currently available?)
 mas install 969418666;  # ColorSnapper2
 
-brew cask install iterm2;
-brew cask install avira-antivirus;
-brew cask install skype;
-brew cask install bartender;
+brew cask install aerial; # AppleTV screensaver
 brew cask install anvil;
+brew cask install appcleaner;
+brew cask install avira-antivirus;
+brew cask install bartender;
 brew cask install beamer;
+brew cask install caffeine;
 brew cask install dash;
 brew cask install dropbox;
 brew cask install flux;
 brew cask install google-chrome;
 brew cask install grandperspective;
+brew cask install hex-fiend;
+brew cask install iterm2;
 brew cask install kaleidoscope;
+brew cask install malwarebytes;
 brew cask install mamp;
 brew cask install medis;
+brew cask install save-hollywood; # custom videos as screensaver
 brew cask install sequel-pro;
 brew cask install sketch;
+brew cask install skyfonts; open /usr/local/Caskroom/skyfonts/*/SkyFonts.app;
+brew cask install skype;
 brew cask install sourcetree;
 brew cask install sublime-text;
-brew cask install transmit;
-brew cask install vagrant;
-brew cask install virtualbox;
-brew cask install virtualbox-extension-pack;
-brew cask install vlc;
-brew cask install transmission;
-brew cask install caffeine;
-brew cask install appcleaner;
 brew cask install surfeasy-vpn;
-brew cask install skyfonts;
-open /usr/local/Caskroom/skyfonts/*/SkyFonts.app
+brew cask install transmission;
+brew cask install transmit;
 brew cask install undercover;
+brew cask install vagrant;
+brew cask install virtualbox-extension-pack;
+brew cask install virtualbox;
+brew cask install vlc;
+
 
 curl -sSL https://get.rvm.io | bash -s stable;
 
