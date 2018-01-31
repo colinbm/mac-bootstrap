@@ -60,7 +60,6 @@ brew cask install iterm2;
 brew cask install kaleidoscope;
 brew cask install malwarebytes;
 brew cask install mamp;
-brew cask install medis;
 brew cask install save-hollywood; # custom videos as screensaver
 brew cask install sequel-pro;
 brew cask install sketch;
