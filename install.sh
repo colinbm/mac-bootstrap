@@ -39,7 +39,6 @@ mas install 413857545;  # Divvy
 mas install 405772121;  # LittleIpsum
 mas install 435003921;  # Fantastical
 mas install 448925439;  # Marked
-mas install 803453959;  # Slack
 # mas install 417896628;  # ColorSchemer Studio (not currently available?)
 mas install 969418666;  # ColorSnapper2
 
@@ -65,6 +64,7 @@ brew cask install sequel-pro;
 brew cask install sketch;
 brew cask install skyfonts; open /usr/local/Caskroom/skyfonts/*/SkyFonts.app;
 brew cask install skype;
+brew cask install slack;
 brew cask install sourcetree;
 brew cask install sublime-text;
 brew cask install surfeasy-vpn;
